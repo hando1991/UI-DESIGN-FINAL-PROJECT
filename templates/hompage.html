@@ -1,52 +1,23 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" href="data:,">
+{% extends "layout.html" %}
 
-<!-- jquery -->
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+{% block content %}
+<script>
+   $(document).ready(function () {
+        $("#learn").click(function (event) {
+            console.log("next page")
+            event.preventDefault()
+            $(location).attr("href", "/learn")
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+</script>
 
 
-  <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-  
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    crossorigin="anonymous">
 
-
-
-    <title>Learn</title>
-  </head>
-  <body >
-
-<nav class="navbar navbar-expand-lg navbar-light  black_background ">
-  <div class="container">
-    <a class="navbar-brand" href="/"> <h>Home</h></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    </button>
-    <div class="collapse navbar-collapse">
-      <div class="navbar-nav">
-        <a class="navbar-brand" href="/"> <h>Learn</h></a>
-      </div>
-      <div class="navbar-nav">
-        <a class="navbar-brand" href="/quiz/1"> <h>Quiz</h></a>
-      </div>
+<body class="coral">
+    <div>
+      Analyzing Balance Sheet
     </div>
-
-    
-    <a class=" small" href="/add"><h class = "white">Help</h></a>
-  </div>
-</nav>
-
-    <div class="container">   
-        {% block content %}
-        {% endblock %}
-    </div>
-
-  </body>
-</html>
+   
+</body>
+{% endblock %}

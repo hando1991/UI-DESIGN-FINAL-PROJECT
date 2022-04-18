@@ -37,11 +37,11 @@ function getRes(id) {
             <div class="pl-5 mb-3">
             ${options}
             </div>
-            <button type="button" id="reslart" class="mt-5 btn btn-primary">Restart</button>
+            <button type="button" id="restart" class="mt-5 btn btn-primary">Restart</button>
         </div>
     </div>`);
       $("#res-con").append(html);
-      reslart();
+      restart();
     },
     error: function (request, status, error) {
       console.log("Error");
@@ -49,11 +49,11 @@ function getRes(id) {
   });
 }
 
-function reslart() {
-  $("#reslart").click(function () {
+function restart() {
+  $("#restart").click(function () {
     $.ajax({
       type: "Get",
-      url: "../reslart",
+      url: "../restart",
       dataType: "json",
       contentType: "application/json; charset=utf-8",
       // data: JSON.stringify({ msg: msg }),

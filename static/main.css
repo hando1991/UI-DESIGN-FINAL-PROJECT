@@ -1,0 +1,23 @@
+.title{
+    font-size: 20px;
+}
+
+#content{
+    height:600px;
+}
+#next_container{
+    margin-left:900px;
+}
+#return_container{
+    margin-left:900px;
+}
+.button{
+background-color: #5994bb; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}

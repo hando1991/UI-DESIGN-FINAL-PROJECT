@@ -38,8 +38,7 @@ function getData() {
                 class="img-fluid">
             <div class="mt-5 pt-5 text-right">
             <button type="button" class="btn btn-secondary" id="previousButton">Previous</button>
-
-                <button type="button" class="btn btn-secondary" id="nextButton">Next</button>
+            <button type="button" class="btn btn-secondary" id="nextButton">Next</button>
             </div>
         </div>
     </div>`);

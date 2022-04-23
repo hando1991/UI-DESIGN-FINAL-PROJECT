@@ -48,6 +48,36 @@ data = {
     },
     
     }
+
+ruledata = {
+    "1":{
+        "id":"1",
+        "name": "Rules",
+        "property":["Assets = Liabilities + Owner,s Equity","Equity = Revenue - (Expense + Dividends)"],
+        "image":"https://cdn.wallstreetmojo.com/wp-content/uploads/2019/07/Accounts-Receivable-Examples.jpg",
+        "summary": ["Debit the receiver and credit the giver", "Debit what comes in and credit what goes out", "Debit expenses and losses, credit income and gains"],
+    },
+}
+
+addDate = {
+    "1":{
+        "id":"1",
+        "name": "Credit and Debit",
+        "property": ["Definition:", "In a nutshell: debits (dr) record all of the money flowing into an account, while credits (cr) record all of the money flowing out of an account."],
+        "image":"https://cdn.wallstreetmojo.com/wp-content/uploads/2019/07/Accounts-Receivable-Examples.jpg",
+        "summary":  ["Asset accounts:A debit increases the balance and a credit decreases the balance.", "Liability accounts: A debit decreases the balance and a credit increases the balance.", "Equity accounts: A debit decreases the balance and a credit increases the balance."],
+    },
+    "2":{
+        "id":"2",
+        "name": "Additional Online Resources:",
+        "property": "Accounting is the process of recording financial transactions pertaining to a business. The accounting process includes summarizing, analyzing, and reporting these transactions to oversight agencies, regulators, and tax collection entities. A useful and impressive topic for your own career in future.",
+        "image":"https://www.youtube.com/embed/VhwZ9t2b3Zk?autoplay=1&mute=1",
+        "summary":  ["Here is one the example i do in financial accounting class, not only include what you have learned in this website, but also contains some more useful topic and tools for investment banking, take a look if you are interested in.", "Financial Accounting Example: https://docs.google.com/spreadsheets/d/1Twt9bAXIzFy1S_mGQeiSPmNPsloJ3c8vgKjBFHNR7JA/edit#gid=1858417963"],
+    },
+}
+
+
+    
 # data = {
 #     "1":{
 #         "id":"1",
@@ -128,9 +158,17 @@ options=[];
 def homepage():
    return render_template('homepage.html')   
 
+@app.route('/help')
+def help():
+   return render_template('help.html')   
+
 @app.route('/start')
 def quizStart():
-   return render_template('start.html')   
+   return render_template('start.html') 
+
+@app.route('/directory')
+def directStart():
+   return render_template('directory.html') 
 
 @app.route('/learn1/',methods=['GET', 'POST'])
 def learn1():
@@ -210,6 +248,23 @@ def quizRes(id=None):
 @app.route('/question/res/<id>')
 def questionRes(id=None):
     return jsonify(options[int(id)-1])
+
+
+@app.route('/getRules')
+def getRules(id=None):
+    return jsonify(ruledata)
+
+@app.route('/addData')
+def addDataRes(id=None):
+    return jsonify(addDate)
+
+@app.route('/rulesRes')
+def rulesRes(id=None):
+    return render_template('rulesRes.html')
+
+@app.route('/rulesRes2')
+def rulesRes2(id=None):
+    return render_template('rulesRes2.html')
 
 
 if __name__ == '__main__':

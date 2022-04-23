@@ -15,7 +15,7 @@ function getRes(id) {
       data.forEach(function (item, index) {
         if (item.flag) score++;
         options = `${options}<div class="border p-2 res-option">
-          <a class="navbar-brand" href="../quiz/res/${index+1}">Problem ${index + 1} <span class="ml-5">${item.flag ? "Correct" : "Incorrect"}</span></a>
+          <a class="navbar-brand" href="../quiz/res/${index+1}">Problem ${index + 1} <span class="ml-5" style="color:${item.flag?"":"red"}">${item.flag ? "Correct" : "Incorrect"}</span></a>
       </div>`;
       });
 

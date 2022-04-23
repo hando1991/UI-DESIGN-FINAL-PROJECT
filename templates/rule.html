@@ -4,51 +4,25 @@
 
 <!-- jquery -->
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>  
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-<script type="text/javascript" src="{{ url_for('static', filename = 'learn.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'rule.js') }}"></script>
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
 
 <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
-<div id = 'content'>
+<div class="container">
+    <div id="rule-con">
 
-
-<div>
-    <h2>
-        General Rules for Accounting
-    </h2>
-</div>
-
-<div class = "row">
-    <div class="col-md-4">
-        <div id="rule_1"> 
-            <b>1.Asset = Liability + Equity </b>
-            <div><input type = 'image' width = '250px' src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsTWu9juRvK0aXnAkDJjHnZqma0V0n4W9MA&usqp=CAU'></input></div>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div id="rule_2"> 
-            <b>2.Equity = Revenue - (Expense + Dividends)</b>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div id="rule_3"> 
-            <b>3.Debit and Credit Rule</b>
-            <div>
-                <a href='http://127.0.0.1:5000/view/6'> Learn more about this rule</a>
-            </div>
-
-        </div>
     </div>
 </div>
+<div id="dialog">
+    <p class="dialog-text" id="dialog-text">Do you want to take look of some additional material in Accounting?</p>
 </div>
 
-<div id = "next_container">
-    <button class = "button" id = "rule_next" href="/quiz/1">Next</button>
-</div>
+
 
 {% endblock %}

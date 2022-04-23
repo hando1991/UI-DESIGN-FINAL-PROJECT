@@ -1,4 +1,4 @@
-.title{
+/* .title{
     font-size: 20px;
 }
 
@@ -20,4 +20,66 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 16px;
+} */
+
+
+.title{
+    font-size: 20px;
+}
+
+.navbar-brand{ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    height: 100%;
+    padding: 10px;
+}
+
+#style_buttons{
+    color: white;
+    background-color: rgb(57, 103, 231);
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    border-radius: 12px;
+    flex: 1;
+}
+
+#content{
+    height:600px;
+}
+#next_container{
+    margin-left:900px;
+}
+#return_container{
+    margin-left:900px;
+}
+
+#page_title{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(66, 66, 66); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+#text_content{
+    padding-bottom: 20px;
+    padding-top: 20px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: large;
+
+}
+.button{
+    background-color: #5994bb; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.dialog-text{
+    opacity: 0;
 }

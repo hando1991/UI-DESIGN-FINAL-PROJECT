@@ -8,7 +8,7 @@ data = {
     "1":{
         "id":"1",
         "name": "Receivables",
-        "property":["The sales a business has made.","The amount of money received for goods or services.","The amount of money owed at the end of each month varies (debtors)."],
+        "property":["Receivables changes once the sales of a business has made.","The amount of money received for goods or services.","The amount of money owed at the end of each month varies (debtors)."],
         "image":"https://cdn.wallstreetmojo.com/wp-content/uploads/2019/07/Accounts-Receivable-Examples.jpg",
         "summary":"Accounts receivable, abbreviated as AR or A/R,are legally enforceable claims for payment held by a business for goods supplied or services rendered that customers have ordered but not paid for. These are generally in the form of invoices raised by a business and delivered to the customer for payment within an agreed time frame. Accounts receivable is shown in a balance sheet as an asset. It is one of a series of accounting transactions dealing with the billing of a customer for goods and services that the customer has ordered. These may be distinguished from notes receivable, which are debts created through formal legal instruments called promissory notes."
 

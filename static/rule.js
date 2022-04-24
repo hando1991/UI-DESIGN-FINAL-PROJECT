@@ -37,7 +37,7 @@ function getData() {
             <img src="${data["1"].image}"
                 class="img-fluid">
             <div class="mt-5 pt-5 text-right">
-            <button type="button" class="btn btn-secondary" id="previousButton">Previous</button>
+            <a href="http://127.0.0.1:5000/explore"><button type="button" class="btn btn-secondary" id="previousButton" >Previous</button></a>
             <button type="button" class="btn btn-secondary" id="nextButton">Next</button>
             </div>
         </div>

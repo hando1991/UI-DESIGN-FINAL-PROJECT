@@ -17,40 +17,36 @@
 
 <div id = "view_container" class = "">
     <div class = "row ">
-    <div class = "col-md-8 green_background">
-        <b><p class = "huge margin_view">{{input_data.name}}</p></b>
+    <div class = "col-md-8">
+        <b><p class = "title">{{input_data.name}}</p></b>
     </div>
     
     <div class = "col-md-4 background">    </div>
     </div>
 <div class = "row ">
-    <div class = "col-md-4 green_background">
+    <div class = "col-md-4">
         <b class ="big">Definition:</b>
         <div>{{input_data.summary}}</div>
     </div>
-    <div class = "col-md-8 green_background">
-        <b>
-        </b>      
-        <input type = "image" src = {{input_data.image}} alt = "Fail to load the image" width = 600px><br>
+    <div class = "col-md-2 ">
     </div>
-    <div class = "col-md-4 background">
-        <a class = "black" value = '1'>
-        </a>
-        
-        <div class = "margin_view3">
-            <div class = "margin_view2"><b >Property: </b>
+    <div class = "col-md-6">
+        <input type = "image" src = {{input_data.image}} alt = "Fail to load the image" width = 500px height = 250px><br>
+        <iframe width=100% height=75% src={{input_data.video}}></iframe>
+    </div>
+    <div class = "col-md-4">
+            <div><b >Property: </b>
                 <ul> 
                 {%for i in input_data.property %}
                     <li>{{i}}</li>
                     {% endfor %}
                 </ul>
             </div>
-        </div>
 </div>
 </div>
 
 <div id="return_container">
-    <button id="return_button" class = "btn">Return</button>
+    <button id="return_button" class = "btn btn-secondary">Return</button>
 </div>
 
 </body>

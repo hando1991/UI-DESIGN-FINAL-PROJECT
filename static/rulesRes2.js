@@ -29,7 +29,7 @@ function getData() {
           <div class="col-sm-6 pt-5">
                 <iframe width=100% height=100% src=${data["2"].image} alt="${data["2"].image}"></iframe>
               <div class="mt-5 pt-5 text-right">
-              <button type="button" class="btn btn-secondary" id="previousButton">Previous</button>
+              <button type="button" class="btn btn-secondary" id="previousButton">Back</button>
                   <button type="button" class="btn btn-secondary" id="nextButton">Next</button>
               </div>
           </div>

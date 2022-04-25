@@ -31,8 +31,8 @@ function start(){
     $("#learn_2").html("2.Owned or controlled by the entity.")
     $("#learn_3").html("3.Conveniently measurable cost at time of acquisition.")
     $("#learn_4").html("4.Any balance sheet item that, if converted to cash today, would bring cash to the entity.")
-    $("#next_container").append( "<a href='http://127.0.0.1:5000/directory'><button class = 'btn btn-secondary'>Directory</button></a>")
-    $("#next_container").append( "<button class = 'btn btn-secondary' onclick='page2()'>Next</button>")
+    $("#next_container").append( "<a href='http://127.0.0.1:5000/directory'><button type='button' class='btn btn-secondary'>Directory</button></a>")
+    $("#next_container").append( "<a><button type='button' class='btn btn-secondary' onclick='page2()'> Next</button></a>")
 
 }
 
@@ -46,8 +46,8 @@ function page2(){
     $("#learn_3").html("3.Two types of Liabilities")
     $("#learn_3").append("<div>a.Current Liability: <div>Company's short-term financial obligations that are due within one year or a normal operating cycle (e.g. accounts payable).</div></div> <div>b.Long-term liabilities: <div>obligations listed on the balance sheet not due for more than a year.</div></div>")
     $("#learn_4").html("4.Liabilities are a vital aspect of a company because they are used to finance operations and pay for large expansions. They can also make transactions between businesses more efficient.")
-    $("#next_container").append( "<button class = 'btn btn-secondary' onclick='start()'>Back</button>")
-    $("#next_container").append( "<button class = 'btn btn-secondary' onclick='page3()'>Next</button>")
+    $("#next_container").append( "<a><button type='button' class = 'btn btn-secondary' onclick='start()'>Back</button></a>")
+    $("#next_container").append( "<a><button type='button' class = 'btn btn-secondary' onclick='page3()'>Next</button></a>")
 }
 
 
@@ -61,8 +61,8 @@ function page3(){
     $("#learn_2").html("2. Shareholder equity can represent the book value of a company. Equity can sometimes be offered as payment-in-kind. It also represents the pro-rata ownership of a company's shares.")
     $("#learn_3").html("3. We can also think of equity as a degree of residual ownership in a firm or asset after subtracting all debts associated with that asset.")
     $("#learn_4").html("4. The calculation of equity is a company's total assets minus its total liabilities, and it's used in several key financial ratios such as ROE.")
-    $("#next_container").append( "<button class = 'btn btn-secondary' onclick='page2()'>Back</button>")
-    $("#next_container").append( "<button class = 'btn btn-secondary' onclick='page4()'>next</button>")
+    $("#next_container").append( "<a><button type='button' class = 'btn btn-secondary' onclick='page2()'>Back</button></a>")
+    $("#next_container").append( "<a><button type='button' class = 'btn btn-secondary' onclick='page4()'>next</button></a>")
 
 }
 
@@ -71,8 +71,8 @@ function page4(){
     $("h1").addClass("small_font")
     $("h1").html("Walmart's Balance Sheet Example")
     $("h1").append("<iframe height = 500px width = 700px src=https://www.youtube.com/embed/eIjCaeNm-Vk></iframe>")
-    $("#next_container").append( "<button class = 'btn btn-secondary' onclick='page3()'>Back</button>")
-    $("#next_container").append( "<a href='http://127.0.0.1:5000/explore'><button class = 'btn btn-secondary' >Next</button></a>")
+    $("#next_container").append( "<a><button type='button' class = 'btn btn-secondary' onclick='page3()'>Back</button></a>")
+    $("#next_container").append( "<a href='http://127.0.0.1:5000/explore'><button type='button' class = 'btn btn-secondary' >Next</button></a>")
 
 }
 
